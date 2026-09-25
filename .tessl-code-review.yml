@@ -1,0 +1,8 @@
+schemaVersion: 1
+lenses:
+  - ref: tessl/code-review@0.1.0#review-correctness-and-data-integrity
+  - ref: tessl/code-review@0.1.0#review-security-and-privacy
+  - ref: ./review-lenses/review-api-error-conventions/SKILL.md
+    globs:
+      - src/api/**
+      - '!src/api/**/*.test.ts'

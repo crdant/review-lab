@@ -89,7 +89,7 @@ return `418` ("I am a teapot") with error code `order_not_found`.
 | cannot_update_order | The user can access but not update the order |
 | invoice_not_found | Invoice cannot be found |
 | invoice_access_denied | Access to the given invoice is not allowed |
-| cannot_update_invoice | The user can access but not update the order |
+| cannot_update_invoice | The user can access but not update the invoice |
 | cannot_provide_format | The system is unable to provide the expected response format |
 | database_unavailable | Cannot access the database |
 | system_is_a_teapot | The system is, in fact, a teapot |

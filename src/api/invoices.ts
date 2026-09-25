@@ -9,7 +9,7 @@ invoices.get('/invoices/:id', (req, res) => {
   if (!invoice) {
     return res.status(404).send('invoice not found');
   }
-  console.log(`invoice lookup for ${invoice.customerEmail}`);
+  console.log(`invoice lookup for ${invoice.id}`);
 
   res.json({ id: invoice.id, total: invoice.total.toFixed(2) });
 });

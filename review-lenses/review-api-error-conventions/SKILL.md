@@ -51,10 +51,10 @@ return `418` ("I am a teapot") with error code `order_not_found`.
 * Code that uses a _more_ specific status code (e.g. `503` vs. `500`) is a
   minor finding when the choice is defensible, or a major finding when the
   code does not apply to the error (e.g. `503` instead of `404`).
-* Using a _less_ specific status code (e.g. `500` vs. `502`) is a major
+* Using a _less_ specific status code (e.g. `500` for a `503`) is a major
   finding, but not a MUST FIX
-* A status code not in the table, but within the same family (e.g. `422` vs.
-  `400`, `502` vs. `500` is a minor finding.
+* A status code not in the table, but within the same family (e.g. `422`
+  instead of `400`, `502` instead of `500`) is a minor finding.
 * An error code not in the table is a minor finding.
 
 ## What not to flag
